@@ -1,24 +1,26 @@
+import { Link } from 'react-router-dom';
+
 export default function Nav() {
     return (
         <nav className="nav-bar">
             <ul>
                 <li>
-                    <a>HOME</a>
+                    <Link to="/">HOME</Link>
                 </li>
                 <li>
-                    <a>ABOUT</a>
+                    <Link to="/about">ABOUT</Link>
                 </li>
                 <li>
-                    <a>MENU</a>
+                    <Link to="/menu">MENU</Link>
                 </li>
                 <li>
-                    <a>RESERVATIONS</a>
+                    <Link to="/reservations">RESERVATIONS</Link>
                 </li>
                 <li>
-                    <a>ORDER ONLINE</a>
+                    <Link to="/order-online">ORDER ONLINE</Link>
                 </li>
                 <li>
-                    <a>LOGIN</a>
+                    <Link to="/login">LOGIN</Link>
                 </li>
             </ul>
         </nav>
