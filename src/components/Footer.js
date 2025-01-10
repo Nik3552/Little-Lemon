@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer>
-            <img src="" />
+            {/* <img src="https://pbs.twimg.com/media/FzyG0vDWIAAPQIf.png" />
             <nav>
                 <p>Dormat Navigation</p>
                 <ul>
@@ -52,7 +52,7 @@ export default function Footer() {
                         <a>Phone number</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> */}
         </footer>
     )
 }
