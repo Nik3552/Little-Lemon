@@ -1,7 +1,7 @@
 export default function Main() {
     return (
         <main>
-            <div className="info-book">
+            <div className="info-book" aria-label="Booking information">
                 <div className="info-book-content">
                     <h1>Little Lemon</h1>
                     <h2>Chicago</h2>
@@ -11,13 +11,13 @@ export default function Main() {
                 </div>
                 <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOruaz7l_7Aq_Y2A91Ef43VTeMOH7zUdN9Q&s"></img>
             </div>
-            <div className="specials">
+            <div className="specials" aria-label="Special meals of this week">
                 <div className="specials-info">
                     <h1>Specials of this week</h1>
                     <button>Online Menu</button>
                 </div>
 
-                <div className="cards-container">
+                <div className="cards-container" aria-label="Special meals of this week, 3 meals">
                     <div className="card1 cards">
                         <img alt="" src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/umgxckeq/ea5503f5-7853-4f4f-97ee-8f5a50706d95.jpg"></img>
                         <div className="price">

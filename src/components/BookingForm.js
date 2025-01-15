@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function BookingForm({ availableTimes, updateTimes }) {
+function BookingForm({ availableTimes }) {
     const [date, setDate] = useState("");
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
@@ -23,10 +23,21 @@ function BookingForm({ availableTimes, updateTimes }) {
         setOccasion(e.target.value);
     };
 
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     setDate("");
+    //     setGuests("");
+    //     setOccasion("");
+    //     setTime("");
+    //     console.log("Form is submitted")
+    // }
+
+    const today = new Date().toISOString().split('T')[0];
+
     return (
         <form style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
             <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" value={date} onChange={handleDateChange} />
+            <input type="date" id="res-date" value={date} min={today} onChange={handleDateChange} required />
             <label htmlFor="res-time">Choose time</label>
             <select id="res-time" value={time} onChange={handleTimeChange}>
                 {availableTimes.map((time, index) => (
@@ -42,7 +53,7 @@ function BookingForm({ availableTimes, updateTimes }) {
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input type="submit" value="Make Your reservation" />
+            <input type="submit" value="Make Your reservation" aria-label="Submit form" disabled={!date} />
         </form>
     );
 }

@@ -32,6 +32,11 @@ header img{
   text-decoration: none;
 }
 
+.nav-bar ul a:active{
+  color:#F4CE14;
+  text-decoration: none;
+}
+
 main{
   width: 100%;
   display: grid;
@@ -158,8 +163,6 @@ main .specials .cards > p:nth-of-type(1){
 }
 
 main .specials .cards > p:nth-of-type(2){
-  position: absolute;
-  bottom: -100px;
   padding: 10px;
   color: black;
 }
@@ -200,4 +203,29 @@ footer ul{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.booking-page{
+  /* background-color: rebeccapurple; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-page a{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.booking-page a:active{
+  color: #F4CE14;
+}
+
+form{
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
 }
