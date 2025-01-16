@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function Nav() {
+export function Nav() {
     return (
         <nav className="nav-bar" aria-label="Navigation links">
             <ul>
@@ -11,13 +11,13 @@ export default function Nav() {
                     <Link to="/about" aria-label="About">About</Link>
                 </li>
                 <li>
-                    <Link to="/menu" aria-label="Menu">Menu</Link>
+                    <Link to="/" aria-label="Menu">Menu</Link>
                 </li>
                 <li>
                     <Link to="/booking" aria-label="Booking">Reservations</Link>
                 </li>
                 <li>
-                    <Link to="/order-online" aria-label="Order online">Order Online</Link>
+                    <Link to="/" aria-label="Order online">Order Online</Link>
                 </li>
                 <li>
                     <Link to="/login" aria-label="Login">Login</Link>

@@ -1,6 +1,8 @@
-import BookingForm from "./BookingForm";
+import { BookingForm } from './BookingForm'
+import { Header } from './Header'
+import { Nav } from './Nav'
 
-function BookingPage({ availableTimes, setAvailableTimes }) {
+export function BookingPage({ availableTimes, setAvailableTimes }) {
     availableTimes = [
         "17:00",
         "18:00",
@@ -10,11 +12,14 @@ function BookingPage({ availableTimes, setAvailableTimes }) {
         "22:00"
     ]
     return (
-        <div className="booking-page">
-            <a href="/">Back</a>
-            <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
-        </div>
+        <>
+            <div className="header-section">
+                <Header />
+                <Nav />
+            </div>
+            <div className="booking-page">
+                <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes} />
+            </div>
+        </>
     )
 }
-
-export default BookingPage;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function BookingForm({ availableTimes }) {
+export function BookingForm({ availableTimes }) {
     const [date, setDate] = useState("");
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
@@ -53,9 +53,7 @@ function BookingForm({ availableTimes }) {
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input type="submit" value="Make Your reservation" aria-label="Submit form" disabled={!date} />
+            <input type="submit" value="Submit Reservation" aria-label=" Submit form" disabled={!date} />
         </form>
     );
 }
-
-export default BookingForm;

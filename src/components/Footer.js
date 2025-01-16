@@ -1,4 +1,4 @@
-export default function Footer() {
+export function Footer() {
     return (
         <footer>
             {/* <img src="https://pbs.twimg.com/media/FzyG0vDWIAAPQIf.png" />

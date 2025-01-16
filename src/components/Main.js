@@ -1,4 +1,6 @@
-export default function Main() {
+import { Link } from 'react-router-dom';
+
+export function Main() {
     return (
         <main>
             <div className="info-book" aria-label="Booking information">
@@ -7,7 +9,7 @@ export default function Main() {
                     <h2>Chicago</h2>
                     <p>We are family owned
                         Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <button>Book a table</button>
+                    <Link to="/booking">Book a table</Link>
                 </div>
                 <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOruaz7l_7Aq_Y2A91Ef43VTeMOH7zUdN9Q&s"></img>
             </div>

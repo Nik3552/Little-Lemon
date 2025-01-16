@@ -1,8 +1,8 @@
 import './App.css';
-import Nav from './components/Nav';
-import Header from './components/Header';
+import { Nav } from './components/Nav';
+import { Header } from './components/Header';
 
-function About() {
+export function About() {
     return (
         <>
             <div className="header-section">
@@ -17,5 +17,3 @@ function About() {
         </>
     );
 }
-
-export default About;
